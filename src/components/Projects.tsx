@@ -3,37 +3,41 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Plataforma completa de e-commerce com carrinho, pagamentos e painel admin.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    challenges: "Implementação de sistema de pagamentos seguro e gestão de estoque em tempo real."
+    title: "Jc dias Atelier",
+    description: "Landing Page desenvolvida em parceria com @HenriquedSS1912 para uma loja de confecção e conserto de peças personalizadas. Atuando na documentação e implementação do layout responsivo, SEO e integração do conteúdo.",
+    tech: ["HTML","CSS","JavaScript", "Design Responsivo", "SEO"],
+    github:"https://github.com/HenriquedSS1912/lp-jcdias.git", 
+    demo: "https://jcdiasatelier.com.br/"
   },
   {
-    title: "Task Management App",
-    description: "Aplicativo de gerenciamento de tarefas com colaboração em equipe.",
-    tech: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    challenges: "Real-time updates usando WebSockets e otimização de performance para grandes datasets."
+    title: "Econectar - Backend",
+    description: "API REST desenvolvida com boas práticas para dar suporte ao sistema Econectar. Responsável pelo gerenciamento de usuários, serviços e categorias com validações, tratamento de erros e integração com banco de dados relacional.",
+    tech: ["Java", "Spring Boot", "API REST", "JPA/Hibernate", "Validações"],
+    github: "https://github.com/Lu-nas/Econectar_PI_Gen.git",
+    demo: "[]",
+  },
+    {
+    title: "TeckGamer - Backend",
+    description: "Projeto desenvolvido para simular o gerenciamento de produtos em um e-commerce gamer, implementando cadastro, validação e persistência de dados, e boas práticas no desenvolvimento de APIs REST.",
+    tech: ["Java", "Spring Boot", "API REST", "MySQL", "Validações", "Postman"],
+    github: "https://github.com/Lu-nas/TeckGamer_api.git",
+    demo: "[]",
   },
   {
-    title: "AI Content Generator",
-    description: "Ferramenta para geração de conteúdo usando APIs de IA e processamento de linguagem natural.",
-    tech: ["React", "OpenAI API", "Node.js", "MongoDB"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    challenges: "Integração com modelos LLM e implementação de rate limiting para controle de custos."
+    title: "Econectar - Frontend",
+    description: "Interface web do sistema Econectar, focada em UX e organização de componentes, simulando uma plataforma de serviços urbanos sustentáveis permitindo a visualização, cadastro e interação. ",
+    tech: ["Java", "Spring Boot", "API REST", "MySQL", "Validações", "Postman"],
+    github: "https://github.com/Lu-nas/Econectar.git",
+    demo: "[]",
   },
   {
-    title: "Real Estate Dashboard",
-    description: "Dashboard analítico para gestão de imóveis com visualizações interativas.",
-    tech: ["React", "Chart.js", "Express", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-    challenges: "Criação de gráficos complexos e otimização de queries para grandes volumes de dados."
-  }
+    title: "Gerenciador de tarefas",
+    description: "Aplicação desenvolvida em Python. O sistema permite cadastrar, listar, atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
+    tech: ["Lógica de programação","python", "JavaScript", "CRUD"],
+    github: "https://github.com/Lu-nas/Gerenciador_de_tarefas.git",
+    demo: "[]",
+  },
+
 ];
 
 const Projects = () => {
@@ -42,8 +46,11 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            Meus Principais Projetos
+            Principais Projetos
           </h2>
+          <p className="text-sm text-muted-foreground mb-3">
+            Experiência acadêmica e projetos práticos
+          </p>
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full" />
         </div>
         
@@ -60,14 +67,7 @@ const Projects = () => {
                 
                 <p className="text-muted-foreground mb-4">
                   {project.description}
-                </p>
-                
-                <div className="mb-4">
-                  <p className="text-sm font-semibold mb-2 text-foreground">Desafios Técnicos:</p>
-                  <p className="text-sm text-muted-foreground italic">
-                    {project.challenges}
-                  </p>
-                </div>
+                </p> 
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
@@ -80,7 +80,7 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap">
                   <Button variant="outline" size="sm" asChild>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />

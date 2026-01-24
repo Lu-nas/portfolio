@@ -14,47 +14,56 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-lg text-foreground/90">
             <p>
-              Olá! Sou estudante de <strong>Engenharia de Software</strong> com paixão por 
-              criar soluções tecnológicas que fazem a diferença. Minha jornada no desenvolvimento 
-              começou com curiosidade e se transformou em uma carreira focada em excelência técnica.
+              Olá! Sou estudante de <strong>Engenharia de Software</strong> Interessada em entender como
+              os sistemas funcionam são projetados e evoluem ao longo do tempo. Tenho experiência acadêmica
+              e prática no desenvolvimento de soluções utilizando<strong>Java</strong>, <strong>Python</strong>
+              e tecnologias web, aplicando boas práticas de modelagem,organização e desenvolvimento.
+              
             </p>
             
             <p>
-              Como <strong>Desenvolvedora Fullstack JavaScript</strong>, trabalho com as 
-              tecnologias mais modernas do ecossistema JS, incluindo React, Node.js, TypeScript 
-              e frameworks cloud. Tenho experiência em construir aplicações escaláveis do zero 
-              até a produção.
-            </p>
-            
+             Atuo no desenvolvimento de projetos <strong>Fullstack </strong>, utilizando tecnologias do 
+             ecossistema JavaScript como <strong>React</strong>, <strong>TypeScript</strong> e <strong>Node.js</strong>,
+             além de APIs REST e integração com banco de dados. Busco construir aplicações funcionais,
+             bem estruturadas e alinhadas a contextos reais de uso.
+            </p> 
+
             <p>
-              Além disso, sou entusiasta de <strong>Inteligência Artificial</strong> e utilizo 
-              ferramentas como GitHub Copilot e modelos LLMs para otimizar meu fluxo de trabalho, 
-              aumentar a produtividade e entregar código de maior qualidade.
+              Também tenho vivência em <strong>processos corporativos e documentação técnica</strong>,
+              além de interesse em <strong>Inteligência Artificial</strong>, utilizando ferramentas de apoio
+              ao desenvolvimento para otimizar o aprendizado, produtividade e qualidade do código.
             </p>
           </div>
-          
+         
           <div className="grid gap-6">
-            <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
-              <Code2 className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Código Limpo</h3>
+             <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow ">
+              <div className="flex items-center gap-3 mb-2.5">
+                <Rocket className="h-8 w-8 text-accent" />
+                <h3 className="text-xl font-semibold">Eficiência e Performance</h3>
+              </div>
               <p className="text-muted-foreground">
-                Comprometida com boas práticas, arquitetura sólida e código manutenível.
+                Busco compreender como decisões técnicas impactam desempenho e manutenção, buscando construir
+                priorizando soluções eficientes e uma experiência de uso consistente.
               </p>
             </div>
-            
-            <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
-              <Rocket className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Performance</h3>
+             <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
+               <div className="flex items-center gap-3 mb-2.5">
+                 <Lightbulb className="h-10 w-10 text-accent" />
+                 <h3 className="text-xl font-semibold">Aprendizado Contínuo</h3>
+               </div>
               <p className="text-muted-foreground">
-                Focada em otimização, Core Web Vitals e experiências de usuário rápidas.
+                Mantenho uma rotina constante de estudos e prática para fortalecer fundamentos
+                e evoluir de forma estruturada na Engenharia de Software. 
               </p>
             </div>
-            
             <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
-              <Lightbulb className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Aprendizado Contínuo</h3>
+              <div className="flex items-center gap-3 mb-2.5">
+                 <Code2 className="h-10 w-10 text-accent" />
+                 <h3 className="text-xl font-semibold">Boas Práticas de Código</h3>
+              </div>
               <p className="text-muted-foreground">
-                Sempre explorando novas tecnologias e aprimorando minhas habilidades.
+                Valorizo código limpo, organizado e legível, aplicando boas práticas que facilitam
+                manutenção, testes e evolução das aplicações.
               </p>
             </div>
           </div>

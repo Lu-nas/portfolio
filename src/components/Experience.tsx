@@ -1,26 +1,34 @@
 import { GraduationCap, Briefcase } from "lucide-react";
 
 const experiences = [
+   {
+    type: "work",
+    title: "Estagiária em TI – Automação de Processos",
+    organization: "Matera Systems (Home Office)",
+    period: "08/2024 - 02/2025",
+    description: "Atuação na análise, mapeamento e otimização de processos utilizando BPMN e metodologias Lean. Uso de ferramentas corporativas como SoftExpert, Jira e Confluence, com foco em documentação técnica e melhoria contínua."
+  },
   {
     type: "education",
     title: "Bacharelado em Engenharia de Software",
-    organization: "Universidade Federal",
-    period: "2021 - 2025",
-    description: "Formação completa em engenharia de software, com foco em desenvolvimento web, arquitetura de sistemas e boas práticas."
+    organization: "Cruzeiro do Sul – Virtual ",
+    period: "2024 - 2028 (em andamento)",
+    description: "Graduação em Engenharia de software, com foco em desenvolvimento, arquitetura de sistemas, modelagem de dados e boas práticas de engenharia." 
+    
   },
-  {
-    type: "work",
-    title: "Desenvolvedora Frontend",
-    organization: "Tech Startup",
-    period: "2023 - Presente",
-    description: "Desenvolvimento de interfaces modernas usando React e TypeScript. Colaboração com equipe backend para integração de APIs."
+   {
+    type: "education",
+    title: "Bootcamp Full Stack",
+    organization: "Generation Brasil",
+    period: "2024",
+    description: "Formação intensiva em desenvolvimento Full Stack, com foco em Java, Spring Boot, APIs REST, MySQL e fundamentos de Frontend."
   },
-  {
-    type: "work",
-    title: "Desenvolvedora Freelance",
-    organization: "Autônoma",
-    period: "2022 - 2023",
-    description: "Projetos diversos para clientes locais e internacionais, incluindo landing pages, e-commerce e aplicações web."
+   {
+    type: "education",
+    title: "Bootcamp Desenvolvimento Web",
+    organization: "Workover Academy – Trend’s IT",
+    period: "2024",
+    description: "Bootcamp Full Stack com ênfase em Frontend, Backend e desenvolvimento de projetos práticos."
   }
 ];
 
@@ -30,7 +38,7 @@ const Experience = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            Experiência & Formação
+            Experiência Profissional & Formação
           </h2>
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full" />
         </div>

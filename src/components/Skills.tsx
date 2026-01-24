@@ -1,24 +1,30 @@
 const skills = {
   frontend: [
-    "React", "TypeScript", "Next.js", "Tailwind CSS", 
-    "HTML5", "CSS3", "Responsive Design", "Vite"
+    "HTML5", "CSS3", "JavaScript ES6+","TypeScript (iniciante)", 
+    "React (Hooks)" 
   ],
   backend: [
-    "Node.js", "Express", "REST APIs", "GraphQL",
-    "Authentication", "API Design", "Serverless"
+    "Java(Spring Boot)", "REST APIs", 
+    "Validações e Regras de Negócio",
+    "Arquitetura em Camadas (básico)"
   ],
   database: [
-    "PostgreSQL", "MongoDB", "Supabase", "Prisma",
-    "SQL", "Database Design"
+    "MySQL","SQL (básico)", "Modelagem de dados (UML)", 
   ],
   tools: [
-    "Git", "GitHub", "Docker", "AWS", "Vercel",
-    "CI/CD", "Testing", "Agile"
+    "Git", "GitHub","Vercel (deploy)","VS Code","Metodologias Ágeis (Scrum)",
+  ],
+  testing: [
+  "Testes manuais","Postman",
+  "Bug reporting", "Validação de fluxos"
   ],
   ai: [
-    "GitHub Copilot", "ChatGPT", "LLM Integration",
-    "AI-Assisted Development", "Prompt Engineering"
-  ]
+    "ChatGPT","Prompt Engineering (básico)",
+    "Uso de IA para apoio ao desenvolvimento",
+  ],
+  processes: [
+  "SoftExpert","BPMN","Documentação ","Modelagem de Processos",
+  ],
 };
 
 const Skills = () => {
@@ -37,7 +43,9 @@ const Skills = () => {
           <SkillCategory title="Backend" skills={skills.backend} />
           <SkillCategory title="Database" skills={skills.database} />
           <SkillCategory title="DevOps & Tools" skills={skills.tools} />
-          <SkillCategory title="AI & Inovação" skills={skills.ai} highlight />
+          <SkillCategory title="testing" skills={skills.testing} />
+         <SkillCategory title="Processos & BPM" skills={skills.processes} />
+          <SkillCategory title="AI & Productivity Tools" skills={skills.ai} highlight />
         </div>
       </div>
     </section>

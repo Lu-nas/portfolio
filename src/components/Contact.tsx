@@ -27,7 +27,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                <p className="text-sm text-muted-foreground">luana.silva@example.com</p>
+                <p className="text-sm text-muted-foreground">luanasilva.ss9497@gmail.com</p>
               </div>
             </div>
           </a>
@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">LinkedIn</h3>
-                <p className="text-sm text-muted-foreground">/in/luanasilva</p>
+                <p className="text-sm text-muted-foreground">luanasilva-lu-nas</p>
               </div>
             </div>
           </a>
@@ -61,13 +61,13 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">GitHub</h3>
-                <p className="text-sm text-muted-foreground">github.com/luanasilva</p>
+                <p className="text-sm text-muted-foreground">https://github.com/Lu-nas/Lu-nas</p>
               </div>
             </div>
           </a>
           
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5519983350638"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:scale-105 transition-all group"
@@ -78,7 +78,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
-                <p className="text-sm text-muted-foreground">+55 11 99999-9999</p>
+                <p className="text-sm text-muted-foreground">+55 (19) 98335-0638</p>
               </div>
             </div>
           </a>

@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
+# Portfólio — Luana Silva
 
-## Project info
+Portfólio pessoal desenvolvido para apresentar projetos, habilidades técnicas e trajetória acadêmica em Engenharia de Software.
 
-**URL**: https://lovable.dev/projects/e7a5f67f-f506-4296-b730-88adc9e0f7a2
+O objetivo deste projeto é centralizar meus trabalhos práticos em desenvolvimento web, destacando experiências com frontend moderno, integração com APIs e boas práticas de organização de código.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Sobre o Projeto
 
-**Use Lovable**
+Este portfólio foi construído com foco em:
+- Apresentação clara de projetos acadêmicos e pessoais
+- Organização de habilidades técnicas por área
+- Comunicação profissional para recrutadores e equipes técnicas
+- Experiência de usuário (UX) simples e objetiva
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e7a5f67f-f506-4296-b730-88adc9e0f7a2) and start prompting.
+---
+### Tecnologias Utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **shadcn/ui**
+- **Lucide Icons**
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📂 Estrutura do Projeto
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+src/
+ ├── components/     # Componentes reutilizáveis
+ ├── sections/       # Seções do portfólio (Hero, About, Skills, Projects, etc.)
+ ├── pages/          # Páginas da aplicação
+ ├── assets/         # Imagens e recursos estáticos
+ └── styles/         # Estilos globais
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### ⚙️ Como Executar o Projeto Localmente
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Pré-requisitos
 
-**Use GitHub Codespaces**
+Node.js (versão LTS recomendada)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+npm ou yarn
 
-## What technologies are used for this project?
 
-This project is built with:
+```bash
+# Clonar o repositório
+git clone https://github.com/Lu-nas/NOME_DO_REPOSITORIO.git
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Acessar a pasta do projeto
+cd NOME_DO_REPOSITORIO
 
-## How can I deploy this project?
+# Instalar as dependências
+npm install
 
-Simply open [Lovable](https://lovable.dev/projects/e7a5f67f-f506-4296-b730-88adc9e0f7a2) and click on Share -> Publish.
+# Iniciar o servidor de desenvolvimento
+npm run dev
 
-## Can I connect a custom domain to my Lovable project?
+```
+### Sobre mim
+Luana Silva
+Estudante de Engenharia de Software | Desenvolvedora Full Stack em formação
 
-Yes, you can!
+GitHub: https://github.com/Lu-nas
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+LinkedIn:https://www.linkedin.com/in/luanaSilva-Lu-nas/
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Email: luanasilva.ss9497@gmail.com
