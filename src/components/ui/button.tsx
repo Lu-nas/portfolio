@@ -30,18 +30,27 @@ const buttonVariants = cva(
   },
 );
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  asChild?: boolean;
-}
+type ButtonOwnProps = VariantProps<typeof buttonVariants> & { asChild?: boolean };
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button";
-    return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />;
-  },
-);
-Button.displayName = "Button";
+type ButtonProps<C extends React.ElementType> = ButtonOwnProps &
+  Omit<React.ComponentPropsWithoutRef<C>, keyof ButtonOwnProps>;
 
-export { Button, buttonVariants };
+type PolymorphicRef<C extends React.ElementType> = React.ComponentPropsWithRef<C>["ref"];
+
+
+const _Button = React.forwardRef(
+  <C extends React.ElementType = "button">(
+    { className, variant, size, asChild = false, ...props }: ButtonProps<C>,
+    ref?: PolymorphicRef<C>
+)=> {
+  const Comp = asChild ? Slot : "button";
+  return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />;
+  }
+) as <C extends React.ElementType = "button">(
+  props: ButtonProps<C> & { ref?: PolymorphicRef<C> }
+) => React.ReactElement;
+
+
+export { _Button as Button };
+
+export {buttonVariants };
