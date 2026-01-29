@@ -1,20 +1,11 @@
 # Portfólio — Luana Silva
 
-Portfólio pessoal desenvolvido para apresentar projetos, habilidades técnicas e evolução como estudante de Engenharia de Software.
+Veja apresentações de projetos, habilidades técnicas e minha evolução como estudante de Engenharia de Software.
 
-O objetivo deste projeto é centralizar trabalhos acadêmicos e pessoais em desenvolvimento,demonstrando boas práticas, organização de código, integração com APIs e o uso de tecnologias modernas.
+O objetivo deste portifólio é centralizar trabalhos acadêmicos e pessoais em desenvolvimento,  demonstrando boas práticas, organização de código, integração com APIs e o uso de tecnologias modernas.
 
----
-
-## Sobre o Projeto
-
-Este portfólio destaca:
-- Apresentação clara de projetos acadêmicos e pessoais
-- Organização de habilidades técnicas por área
-- Comunicação profissional para recrutadores e equipes técnicas
-- Experiência de usuário (UX) simples e objetiva
-
----
+--- 
+ 
 ### Tecnologias Utilizadas
 
 - **React**
@@ -40,7 +31,7 @@ src/
 ```
 🖥️  Acesse o portfólio em produção:
 
-
+(Gerando... link)
 
 ### ⚙️ Como Executar o Projeto Localmente
  
@@ -66,6 +57,6 @@ Estudante de Engenharia de Software | Desenvolvedora em formação para qualidad
 
 GitHub: https://github.com/Lu-nas
 
-LinkedIn: luanaSilva-Lu-nas/ 
+LinkedIn: www.linkedin.com/in/luanasilva-lu-nas 
 
 Email: luanasilva.ss9497@gmail.com
