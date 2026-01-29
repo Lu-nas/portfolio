@@ -15,23 +15,23 @@ const About = () => {
           <div className="space-y-6 text-lg text-foreground/90">
             <p>
               Olá! Sou estudante de <strong>Engenharia de Software</strong> Interessada em entender como
-              os sistemas funcionam são projetados e evoluem ao longo do tempo. Tenho experiência acadêmica
-              e prática no desenvolvimento de soluções utilizando<strong>Java</strong>, <strong>Python</strong>
-              e tecnologias web, aplicando boas práticas de modelagem,organização e desenvolvimento.
+              os sistemas funcionam, são projetados e evoluem ao longo do tempo. Tenho experiência acadêmica
+              e prática no desenvolvimento de soluções utilizando <strong>Java</strong>, <strong>Python</strong> 
+              e tecnologias web, aplicando boas práticas de modelagem, organização e desenvolvimento.
               
             </p>
             
             <p>
-             Atuo no desenvolvimento de projetos <strong>Fullstack </strong>, utilizando tecnologias do 
-             ecossistema JavaScript como <strong>React</strong>, <strong>TypeScript</strong> e <strong>Node.js</strong>,
+             Atuo no desenvolvimento de projetos, utilizando tecnologias do ecossistema JavaScript como  
+             <strong> React</strong>, <strong>TypeScript</strong> e <strong>Node.js</strong>,
              além de APIs REST e integração com banco de dados. Busco construir aplicações funcionais,
              bem estruturadas e alinhadas a contextos reais de uso.
             </p> 
 
             <p>
               Também tenho vivência em <strong>processos corporativos e documentação técnica</strong>,
-              além de interesse em <strong>Inteligência Artificial</strong>, utilizando ferramentas de apoio
-              ao desenvolvimento para otimizar o aprendizado, produtividade e qualidade do código.
+              além de interesse em <strong>Inteligência Artificial</strong>, utilizando como ferramenta
+               de apoio de desenvolvimento para otimizar o aprendizado, produtividade e qualidade do código.
             </p>
           </div>
          

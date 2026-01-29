@@ -11,7 +11,7 @@ const Hero = () => {
           Luana Silva
         </h1>
         <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-4">
-          Estudante de Engenharia de Software | Desenvolvedora em formação
+          Estudante de Engenharia de Software 
         </p>
         
        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">

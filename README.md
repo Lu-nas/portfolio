@@ -1,14 +1,14 @@
 # Portfólio — Luana Silva
 
-Portfólio pessoal desenvolvido para apresentar projetos, habilidades técnicas e trajetória acadêmica em Engenharia de Software.
+Portfólio pessoal desenvolvido para apresentar projetos, habilidades técnicas e evolução como estudante de Engenharia de Software.
 
-O objetivo deste projeto é centralizar meus trabalhos práticos em desenvolvimento web, destacando experiências com frontend moderno, integração com APIs e boas práticas de organização de código.
+O objetivo deste projeto é centralizar trabalhos acadêmicos e pessoais em desenvolvimento,demonstrando boas práticas, organização de código, integração com APIs e o uso de tecnologias modernas.
 
 ---
 
 ## Sobre o Projeto
 
-Este portfólio foi construído com foco em:
+Este portfólio destaca:
 - Apresentação clara de projetos acadêmicos e pessoais
 - Organização de habilidades técnicas por área
 - Comunicação profissional para recrutadores e equipes técnicas
@@ -35,24 +35,23 @@ src/
  ├── pages/          # Páginas da aplicação
  ├── assets/         # Imagens e recursos estáticos
  └── styles/         # Estilos globais
+ └── main.tsx        # Arquivo principal
 
 ```
+🖥️  Acesse o portfólio em produção:
+
+
 
 ### ⚙️ Como Executar o Projeto Localmente
-
-Pré-requisitos
-
-Node.js (versão LTS recomendada)
-
-npm ou yarn
-
+ 
 
 ```bash
+
 # Clonar o repositório
-git clone https://github.com/Lu-nas/NOME_DO_REPOSITORIO.git
+git clone https://github.com/Lu-nas/portfolio.git
 
 # Acessar a pasta do projeto
-cd NOME_DO_REPOSITORIO
+cd portfolio
 
 # Instalar as dependências
 npm install
@@ -62,11 +61,11 @@ npm run dev
 
 ```
 ### Sobre mim
-Luana Silva
-Estudante de Engenharia de Software | Desenvolvedora Full Stack em formação
+
+Estudante de Engenharia de Software | Desenvolvedora em formação para qualidade de software 
 
 GitHub: https://github.com/Lu-nas
 
-LinkedIn:https://www.linkedin.com/in/luanaSilva-Lu-nas/
+LinkedIn: luanaSilva-Lu-nas/ 
 
 Email: luanasilva.ss9497@gmail.com
