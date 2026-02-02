@@ -1,8 +1,8 @@
 # Portfólio — Luana Silva
 
-Veja apresentações de projetos, habilidades técnicas e minha evolução como estudante de Engenharia de Software.
+Portfólio desenvolvido para apresentar projetos acadêmicos e práticos, refletindo minha evolução como estudante de **Engenharia de Software**, com foco em boas práticas, organização de código e desenvolvimento de aplicações web modernas.
 
-O objetivo deste portifólio é centralizar trabalhos acadêmicos e pessoais em desenvolvimento,  demonstrando boas práticas, organização de código, integração com APIs e o uso de tecnologias modernas.
+O projeto reúne experiências em **frontend**, **backend**, integração com **APIs REST** e construção de interfaces **acessíveis**, **responsivas** e bem estruturadas.
 
 --- 
  
@@ -15,23 +15,40 @@ O objetivo deste portifólio é centralizar trabalhos acadêmicos e pessoais em 
 - **shadcn/ui**
 - **Lucide Icons**
 
+
+## 🧩 Principais Características
+
+- Arquitetura baseada em **componentes semânticos autossuficientes**
+- Navegação por âncoras com foco em UX
+- Componentes reutilizáveis (design system)
+- Tipagem forte com TypeScript
+- Atenção a acessibilidade (ARIA, headings, navegação por teclado)
+- Layout responsivo (mobile-first)
+
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```bash
+public/
+ └── favicon.ico        # Recursos estáticos
+
 src/
- ├── components/     # Componentes reutilizáveis
- ├── sections/       # Seções do portfólio (Hero, About, Skills, Projects, etc.)
- ├── pages/          # Páginas da aplicação
- ├── assets/         # Imagens e recursos estáticos
+ ├── components/        # Componentes reutilizáveis 
+ │   ├── ui/            # Design system (Button, Card, etc.)
+ │   └── Navigation.tsx
+ │   └── ...
+ ├── pages/             # Páginas da aplicação
+ │   └── Index.tsx  
  └── styles/         # Estilos globais
- └── main.tsx        # Arquivo principal
+ ├── App.tsx            # Composição principal
+ └── main.tsx        # Ponto de Entrada
 
 ```
-🖥️  Acesse o portfólio em produção:
+🖥️  Demonstração Online
 
-(Gerando... link)
+🔗 Em produção:
+(Em breve — deploy via Netlify)
 
 ### ⚙️ Como Executar o Projeto Localmente
  
@@ -53,7 +70,9 @@ npm run dev
 ```
 ### Sobre mim
 
-Estudante de Engenharia de Software | Desenvolvedora em formação para qualidade de software 
+Sou estudante de Engenharia de Software, com interesse em desenvolvimento de software de qualidade, boas práticas, organização de código e aprendizado contínuo.
+
+Atua no desenvolvimento de projetos acadêmicos e pessoais utilizando tecnologias modernas do ecossistema JavaScript, além de experiência com Java, APIs REST e bancos de dados relacionais.
 
 GitHub: https://github.com/Lu-nas
 
