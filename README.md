@@ -57,6 +57,6 @@ Estudante de Engenharia de Software | Desenvolvedora em formação para qualidad
 
 GitHub: https://github.com/Lu-nas
 
-LinkedIn: www.linkedin.com/in/luanasilva-lu-nas 
+LinkedIn: https://www.linkedin.com/in/luanasilva-lu-nas
 
 Email: luanasilva.ss9497@gmail.com
