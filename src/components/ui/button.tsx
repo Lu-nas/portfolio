@@ -53,4 +53,4 @@ const _Button = React.forwardRef(
 
 export { _Button as Button };
 
-export {buttonVariants };
+  export { buttonVariants, type ButtonProps };
