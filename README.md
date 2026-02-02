@@ -16,7 +16,7 @@ O projeto reúne experiências em **frontend**, **backend**, integração com **
 - **Lucide Icons**
 
 
-## 🧩 Principais Características
+## Principais Características
 
 - Arquitetura baseada em **componentes semânticos autossuficientes**
 - Navegação por âncoras com foco em UX
@@ -46,8 +46,7 @@ src/
 
 ```
 🖥️  Demonstração Online
-
-🔗 Em produção:
+ 
 (Em breve — deploy via Netlify)
 
 ### ⚙️ Como Executar o Projeto Localmente
