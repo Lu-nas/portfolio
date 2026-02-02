@@ -6,14 +6,14 @@ const experiences = [
     title: "Estagiária em TI – Automação de Processos",
     organization: "Matera Systems (Home Office)",
     period: "08/2024 - 02/2025",
-    description: "Atuação na análise, mapeamento e otimização de processos utilizando BPMN e metodologias Lean. Uso de ferramentas corporativas como SoftExpert, Jira e Confluence, com foco em documentação técnica e melhoria contínua."
+    description: "Atuação em análise, mapeamento e melhoria de processos corporativos com BPMN e  Lean, utilizando SoftExpert, Jira e Confluence, para documentação técnica e padronização de fluxos."
   },
   {
     type: "education",
     title: "Bacharelado em Engenharia de Software",
     organization: "Cruzeiro do Sul – Virtual ",
     period: "2024 - 2028 (em andamento)",
-    description: "Graduação em Engenharia de software, com foco em desenvolvimento, arquitetura de sistemas, modelagem de dados e boas práticas de engenharia." 
+    description: "Graduação em Engenharia de software, com foco em em fundamentos de desenvolvimento, arquitetura de sistemas, modelagem de dados e boas práticas de engenharia." 
     
   },
    {
@@ -28,7 +28,7 @@ const experiences = [
     title: "Bootcamp Desenvolvimento Web",
     organization: "Workover Academy – Trend’s IT",
     period: "2024",
-    description: "Bootcamp Full Stack com ênfase em Frontend, Backend e desenvolvimento de projetos práticos."
+    description: "Bootcamp em desenvolvimento web com ênfase em Frontend, Backend e construção de projetos práticos orientados a problemas reais."
   }
 ];
 

@@ -1,38 +1,38 @@
 const skills = {
   frontend: [
-    "HTML5", "CSS3", "JavaScript ES6+","TypeScript (iniciante)", 
+    "HTML5", "CSS3", "JavaScript ES6+","TypeScript (básico)", 
     "React (Hooks)" 
   ],
   backend: [
-    "Java(Spring Boot)", "REST APIs", 
+    "Java(Spring Boot)", "APIs REST", 
     "Validações e Regras de Negócio",
     "Arquitetura em Camadas (básico)"
   ],
   database: [
     "MySQL","SQL (básico)", "Modelagem de dados (UML)", 
   ],
-  tools: [
-    "Git", "GitHub","Vercel (deploy)","VS Code","Metodologias Ágeis (Scrum)",
-  ],
   testing: [
-  "Testes manuais","Postman",
-  "Bug reporting", "Validação de fluxos"
+    "Testes manuais","Postman",
+    "Bug reporting", "Validação de fluxos"
+  ],
+  processes: [
+  "SoftExpert","BPMN","Documentação Técnica ","Modelagem Processos",
+  ],
+  tools: [
+    "Git", "GitHub","Netlify (deploy)","VS Code","Metodologias Ágeis (Scrum)",
   ],
   ai: [
     "ChatGPT","Prompt Engineering (básico)",
-    "Uso de IA para apoio ao desenvolvimento",
-  ],
-  processes: [
-  "SoftExpert","BPMN","Documentação ","Modelagem de Processos",
+    "IA aplicada como apoio ao desenvolvimento",
   ],
 };
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="skills" aria-labelledby="skills-title" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+          <h2 id="skills-title" className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
             Tech Stack & Ferramentas
           </h2>
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full" />
@@ -42,9 +42,9 @@ const Skills = () => {
           <SkillCategory title="Frontend" skills={skills.frontend} />
           <SkillCategory title="Backend" skills={skills.backend} />
           <SkillCategory title="Database" skills={skills.database} />
-          <SkillCategory title="DevOps & Tools" skills={skills.tools} />
-          <SkillCategory title="testing" skills={skills.testing} />
+          <SkillCategory title="Testing" skills={skills.testing} />
          <SkillCategory title="Processos & BPM" skills={skills.processes} />
+          <SkillCategory title="DevOps & Tools" skills={skills.tools} />
           <SkillCategory title="AI & Productivity Tools" skills={skills.ai} highlight />
         </div>
       </div>

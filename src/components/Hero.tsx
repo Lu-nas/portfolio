@@ -14,18 +14,20 @@ const Hero = () => {
         <h1  id="hero-title" className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           Luana Silva
         </h1>
-        <h2 className="sr-only">Engenharia de Software e Desenvolvimento Web</h2>
+        <h2 className="sr-only">Engenharia de Software com foco em Backend</h2>
 
         <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-4">
-          Estudante de Engenharia de Software 
+          Estudante de Engenharia de Software | Backend
         </p>
         
        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-          Desenvolvedora em formação com experiência acadêmica e prática em projetos, utilizando{" "}
+          Desenvolvedora em formação, atuando no desenvolvimento de <strong> APIs REST</strong>,  
+          lógica de negócio e integração com <strong>bancos de dados relacionais</strong>.
+          Possuo experiência acadêmica utilizando{" "}
           <span className="text-foreground font-medium">
-            Java (Spring Boot), React, TypeScript e MySQL 
+            Java (Spring Boot), MySQL, React, TypeScript  
           </span> 
-          , APIs REST, vivencia em processos corporativos e boas práticas de desenvolvimento.
+            , aplicando boas práticas de desenvolvimento e organização de código.
         </p> 
         
         <div className="flex flex-wrap gap-4 justify-center mb-12"> 

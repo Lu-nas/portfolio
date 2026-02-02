@@ -1,19 +1,17 @@
 # Portfólio — Luana Silva
 
-Portfólio desenvolvido para apresentar projetos acadêmicos e práticos, refletindo minha evolução como estudante de **Engenharia de Software**, com foco em boas práticas, organização de código e desenvolvimento de aplicações web modernas.
+Este Portfólio foi desenvolvido para apresentar projetos acadêmicos e práticos, refletindo minha evolução como estudante de **Engenharia de Software**, com atenção a boas práticas, organização de código e desenvolvimento de soluções com ênfase em **backend**.
 
-O projeto reúne experiências em **frontend**, **backend**, integração com **APIs REST** e construção de interfaces **acessíveis**, **responsivas** e bem estruturadas.
-
+O projeto reúne experiências no desenvolvimento de **APIs REST**, integração com bancos de dados relacionais e construção de sistemas web incluindo conhecimentos em **frontend** para criação de interfaces **acessíveis** **responsivas** e bem estruturadas.
 --- 
  
 ### Tecnologias Utilizadas
 
-- **React**
-- **TypeScript**
-- **Vite**
-- **Tailwind CSS**
-- **shadcn/ui**
-- **Lucide Icons**
+- **React** + **TypeScript** —— componentização, escalabilidade e segurança de tipagem
+- **Vite**                   —— ambiente de desenvolvimento rápido e build otimizado
+- **Tailwind CSS**           —— produtividade e padronização visual
+- **shadcn/ui**              —— base de design system reutilizável e acessível
+- **Lucide Icons**           —— ícones leves e consistentes
 
 
 ## Principais Características
@@ -40,14 +38,14 @@ src/
  │   └── ...
  ├── pages/             # Páginas da aplicação
  │   └── Index.tsx  
- └── styles/         # Estilos globais
+ ├── styles/            # Estilos globais
  ├── App.tsx            # Composição principal
- └── main.tsx        # Ponto de Entrada
+ └── main.tsx           # Ponto de Entrada
 
 ```
 🖥️  Demonstração Online
- 
-(Em breve — deploy via Netlify)
+
+https://luana-silva-portfolio.netlify.app
 
 ### ⚙️ Como Executar o Projeto Localmente
  
@@ -69,9 +67,9 @@ npm run dev
 ```
 ### Sobre mim
 
-Sou estudante de Engenharia de Software, com interesse em desenvolvimento de software de qualidade, boas práticas, organização de código e aprendizado contínuo.
+Sou estudante de Engenharia de Software, com interesse em desenvolvimento de software de qualidade, organização de código e aprendizado contínuo.
 
-Atua no desenvolvimento de projetos acadêmicos e pessoais utilizando tecnologias modernas do ecossistema JavaScript, além de experiência com Java, APIs REST e bancos de dados relacionais.
+Desenvolvo projetos acadêmicos e pessoais com foco em backend, utilizando Java, APIs REST e bancos de dados relacionais, além de integração com tecnologias do ecossistema JavaScript.
 
 GitHub: https://github.com/Lu-nas
 

@@ -11,7 +11,7 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full mb-6" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Estou sempre aberta a novas oportunidades e conversas sobre tecnologia. 
+            Estou sempre aberta a novas oportunidades e conversas sobre tecnologia. <br></br>
             Entre em contato através dos canais abaixo!
           </p>
         </div>

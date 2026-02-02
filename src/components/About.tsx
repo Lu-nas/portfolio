@@ -14,24 +14,24 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-lg text-foreground/90">
             <p>
-              Olá! Sou estudante de <strong>Engenharia de Software</strong> Interessada em entender como
-              os sistemas funcionam, são projetados e evoluem ao longo do tempo. Tenho experiência acadêmica
-              e prática no desenvolvimento de soluções utilizando <strong>Java</strong>, <strong>Python</strong> 
-              e tecnologias web, aplicando boas práticas de modelagem, organização e desenvolvimento.
+              Olá! Sou estudante de <strong>Engenharia de Software</strong>, interessada em compreender como
+              os sistemas são projetados, implementados e evoluem ao longo do tempo. Possuo experiência acadêmica
+              no desenvolvimento de soluções utilizando <strong>Java</strong>, <strong>Python </strong> 
+              e tecnologias web, aplicando boas práticas de modelagem, organização e desenvolvimento de software.
               
             </p>
             
             <p>
-             Atuo no desenvolvimento de projetos, utilizando tecnologias do ecossistema JavaScript como  
-             <strong> React</strong>, <strong>TypeScript</strong> e <strong>Node.js</strong>,
-             além de APIs REST e integração com banco de dados. Busco construir aplicações funcionais,
-             bem estruturadas e alinhadas a contextos reais de uso.
+              Atuando em projetos, com foco em <strong>backend</strong>, trabalhando na construção de <strong>APIs REST</strong>,
+              integração com <strong>bancos de dados relacionais</strong> e lógica de negócio. 
+              Também utilizo tecnologias do ecossistema JavaScript, como <strong> React</strong>, <strong>TypeScript</strong> e 
+              <strong> Node.js</strong>, para integração entre camadas e desenvolvimento de sistemas web completos.
             </p> 
 
             <p>
-              Também tenho vivência em <strong>processos corporativos e documentação técnica</strong>,
-              além de interesse em <strong>Inteligência Artificial</strong>, utilizando como ferramenta
-               de apoio de desenvolvimento para otimizar o aprendizado, produtividade e qualidade do código.
+              Possuo vivência em <strong>processos corporativos</strong> e <strong>documentação técnica</strong>,
+              além de interesse em <strong>Inteligência Artificial</strong> como ferramenta de apoio ao
+              desenvolvimento, visando otimizar o aprendizado, a produtividade e a qualidade do código.
             </p>
           </div>
          
@@ -42,8 +42,8 @@ const About = () => {
                 <h3 className="text-xl font-semibold">Eficiência e Performance</h3>
               </div>
               <p className="text-muted-foreground">
-                Busco compreender como decisões técnicas impactam desempenho e manutenção, buscando construir
-                priorizando soluções eficientes e uma experiência de uso consistente.
+                Busco compreender como decisões técnicas impactam o desempenho e manutenção, em
+                soluções eficientes e experiências de uso consistente.
               </p>
             </div>
              <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
@@ -52,8 +52,8 @@ const About = () => {
                  <h3 className="text-xl font-semibold">Aprendizado Contínuo</h3>
                </div>
               <p className="text-muted-foreground">
-                Mantenho uma rotina constante de estudos e prática para fortalecer fundamentos
-                e evoluir de forma estruturada na Engenharia de Software. 
+                Mantenho uma rotina constante de estudos e prática, fortalecendo fundamentos
+                e evoluindo de forma estruturada na Engenharia de Software. 
               </p>
             </div>
             <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
