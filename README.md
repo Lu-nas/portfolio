@@ -1,6 +1,6 @@
 # Portfólio — Luana Silva
 
-Este Portfólio foi desenvolvido para apresentar projetos acadêmicos e práticos, refletindo minha evolução como estudante de **Engenharia de Software**, com atenção a boas práticas, organização de código e desenvolvimento de soluções com ênfase em **backend**.
+Este Portfólio foi desenvolvido para apresentar projetos acadêmicos e práticos, refletindo minha evolução como graduanda em **Engenharia de Software**, com atenção a boas práticas, organização de código e desenvolvimento de soluções com ênfase em **backend**.
 
 O projeto reúne experiências no desenvolvimento de **APIs REST**, integração com bancos de dados relacionais e construção de sistemas web incluindo conhecimentos em **frontend** para criação de interfaces **acessíveis** **responsivas** e bem estruturadas.
 --- 
