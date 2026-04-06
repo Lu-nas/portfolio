@@ -11,7 +11,7 @@ const Apresentacao = () => {
           Este vídeo apresenta parte da minha trajetória de transição de carreira e evolução na área de tecnologia, com foco em desenvolvimento backend e construção de soluções reais.
         </p>
 
-        <div className="w-full max-w-2xl mx-auto aspect-video shadow-lg rounded-xl overflow-hidden">
+        <div className="w-full h-full max-w-lg mx-auto aspect-video shadow-lg overflow-hidden">
           <iframe
             className="w-full h-full rounded-lg"
             src="https://www.youtube.com/embed/tkhAjyYVUKM"
