@@ -14,7 +14,7 @@ const Apresentacao = () => {
         <div className="w-full aspect-video">
           <iframe
             className="w-full h-full rounded-lg"
-            src="https://youtu.be/tkhAjyYVUKM?si=HtMIm4_FWxiAm2uT"
+            src="https://www.youtube.com/embed/tkhAjyYVUKM"
             title="Apresentação Luana"
             allowFullScreen
           ></iframe>
