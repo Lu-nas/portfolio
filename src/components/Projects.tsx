@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
    title:"Jc dias Atelier",
    description:"Landing Page desenvolvida em parceria com @HenriquedSS1912 para uma loja de confecção e conserto de peças personalizadas. com foco em layout responsivo, SEO, documentação e organização do conteúdo.",
-   contribution:"Participei no desenvolvimento da seção de contato e na implementação do login destinado aos administradores do site.",
+   contribution:"Desenvolvimento da seção de contato e implementação do login destinado aos administradores do site.",
    tech: ["HTML","CSS","JavaScript","Design Responsivo","SEO"],
    links: [
       {
@@ -59,8 +59,8 @@ const projects: Project[] = [
   
   {
   title:"TeckGamer - Backend",
-  description:"Projeto desenvolvido como parte de um aprendizado guiado de APIs REST, para simular o gerenciamento de produtos em um e-commerce gamer, com cadastro, validação e persistência de dados, aplicando boas práticas.",
-  contribution:"Desenvolvi as funcionalidades de cadastro e manutenção de games, categorias e produtos, utilizando operações CRUD e realizando testes das APIs com Postman.",
+  description:"Projeto desenvolvido como parte de um aprendizado guiado de APIs REST, simulando o gerenciamento de produtos em um e-commerce gamer com cadastro, validação e persistência de dados, aplicando boas práticas.",
+  contribution:"Desenvolvi as funcionalidades de cadastro, manutenção dos games em categorias e produtos, útilizando operações CRUD e realizando testes das APIs com Postman.",
   tech:["Java","Spring Boot","API REST","MySQL","Validações","Postman"],
   links:[
       {
@@ -73,8 +73,8 @@ const projects: Project[] = [
   
   {
   title: "Gerenciador de tarefas",
-  description:"Aplicação desenvolvida em Python. O sistema permite cadastrar, listar, atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
-  contribution:"Desenvolvi aplicação em Python, incluindo a implementação da API, cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, com testes realizados no Postman.",
+  description:"Aplicação desenvolvida em Python. permitindo cadastro, em lista, para atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
+  contribution:" implementação da API com cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, finalizando positivo os testes realizados no Postman.",
   tech:["python","Lógica de programação","Estruturas de Dados","CRUD"],
   links:[
     {
