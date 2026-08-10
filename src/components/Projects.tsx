@@ -74,7 +74,7 @@ const projects: Project[] = [
   {
   title: "Gerenciador de tarefas",
   description:"Aplicação desenvolvida em Python. permitindo cadastro, em lista, para atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
-  contribution:" implementação da API com cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, finalizando positivo os testes realizados no Postman.",
+  contribution:"Implementação da API com cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, finalizando positivo os testes realizados no Postman.",
   tech:["python","Lógica de programação","Estruturas de Dados","CRUD"],
   links:[
     {
