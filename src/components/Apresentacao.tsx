@@ -7,8 +7,8 @@ const Apresentacao = () => {
             Um pouco da minha história
         </h2>
 
-        <div className="text-lg text-muted-foreground mb-10">
-          <p className="mb-4">
+        <div className="max-w-3xl mx-auto text-lg text-muted-foreground text-left space-y-4">
+          <p>
             Entrar na tecnologia tem sido mais do que aprender a programar.
             Tem sido uma oportunidade de me redescobrir, descobrir novas possibilidades 
             e construir, passo a passo, um espaço em uma área que sempre despertou minha curiosidade.
@@ -22,7 +22,7 @@ const Apresentacao = () => {
             quando necessário.
           </p>
         
-          <p className="mt-4">
+          <p>
             Ainda estou construindo essa história — e este portfólio é um pouco do que já
             construí até aqui.
           </p>
