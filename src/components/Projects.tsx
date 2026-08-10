@@ -6,14 +6,14 @@ type ProjectLink = {
   label: string;
   url: string;
   type: "github" | "external";
-  };
+};
 
 type Project = {
   title: string;
   description: string;
   contribution: string;
   tech: string[];
-  links: ProjectLink[]
+  links: ProjectLink[];
 };
 
 const projects: Project[] = [
@@ -23,67 +23,67 @@ const projects: Project[] = [
       "Plataforma de serviços urbanos sustentáveis desenvolvida como projeto integrador.",
     contribution:
     "No projeto integrador, desenvolvi a seção de Serviços da aplicação. Posteriormente utilizei o projeto como base para uma refatoração própria, reorganizando classes e estrutura do código.",
-    tech: ["Java", "Spring Boot",  "React", "TypeScript"],
-         links: [
-        {
-          label: "Backend",
-          url: "https://github.com/Lu-nas/Econectar_PI_Gen.git",
-          type: "github",
-        },
-        {
-          label: "Frontend",
-          url: "https://github.com/Lu-nas/Econectar.git",
-          type: "github",
-        },
-      ],   
-  },
-  
-  {
-    title: "Jc dias Atelier",
-    description: "Landing Page desenvolvida em parceria com @HenriquedSS1912 para uma loja de confecção e conserto de peças personalizadas. com foco em layout responsivo, SEO, documentação e organização do conteúdo.",
-    contribution: "Participei no desenvolvimento da seção de contato e na implementação do login destinado aos administradores do site.",
-    tech: ["HTML","CSS","JavaScript", "Design Responsivo", "SEO"],
-             links: [
-        {
-          label: "Código",
-          url: "https://github.com/HenriquedSS1912/lp-jcdias.git",
-          type: "github",
-        },
-        {
-          label: "Demo Live",
-          url: "https://jcdiasatelier.com.br/",
-          type: "external",
-        },
-      ],
-  },
-  
-  {
-  title: "TeckGamer - Backend",
-  description: "Projeto desenvolvido como parte de um aprendizado guiado de APIs REST, para simular o gerenciamento de produtos em um e-commerce gamer, com cadastro, validação e persistência de dados, aplicando boas práticas.",
-  contribution: "Desenvolvi as funcionalidades de cadastro e manutenção de games, categorias e produtos, utilizando operações CRUD e realizando testes das APIs com Postman. ",
-  tech: ["Java", "Spring Boot", "API REST", "MySQL", "Validações", "Postman"],
-    links: [
-    {
-      label: "Código",
-      url: "https://github.com/Lu-nas/TeckGamer_api.git",
-      type: "github",
-     },
-  },
-  
-  {
-    title: "Gerenciador de tarefas",
-    description: "Aplicação desenvolvida em Python. O sistema permite cadastrar, listar, atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
-    contribution: "Desenvolvi aplicação em Python, incluindo a implementação da API, cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, com testes realizados no Postman.",
-    tech: ["python","Lógica de programação", "Estruturas de Dados", "CRUD"],
-   
-       links: [
-        {
-          label: "Código", 
-          url:"https://github.com/Lu-nas/Gerenciador_de_tarefas.git",
-          type: "github",
-        },
+    tech:["Java", "Spring Boot",  "React", "TypeScript"],
+    links:[
+      {
+        label:"Backend",
+        url:"https://github.com/Lu-nas/Econectar_PI_Gen.git",
+        type:"github",
       },
-    
+      {
+        label: "Frontend",
+        url: "https://github.com/Lu-nas/Econectar.git",
+        type: "github",
+      },
+    ],   
+  },
+  
+  {
+   title:"Jc dias Atelier",
+   description:"Landing Page desenvolvida em parceria com @HenriquedSS1912 para uma loja de confecção e conserto de peças personalizadas. com foco em layout responsivo, SEO, documentação e organização do conteúdo.",
+   contribution:"Participei no desenvolvimento da seção de contato e na implementação do login destinado aos administradores do site.",
+   tech: ["HTML","CSS","JavaScript","Design Responsivo","SEO"],
+   links: [
+      {
+        label: "Código",
+        url: "https://github.com/HenriquedSS1912/lp-jcdias.git",
+        type: "github",
+      },
+      {
+        label: "Demo Live",
+        url: "https://jcdiasatelier.com.br/",
+        type: "external",
+      },
+    ],
+  },
+  
+  {
+  title:"TeckGamer - Backend",
+  description:"Projeto desenvolvido como parte de um aprendizado guiado de APIs REST, para simular o gerenciamento de produtos em um e-commerce gamer, com cadastro, validação e persistência de dados, aplicando boas práticas.",
+  contribution:"Desenvolvi as funcionalidades de cadastro e manutenção de games, categorias e produtos, utilizando operações CRUD e realizando testes das APIs com Postman.",
+  tech:["Java","Spring Boot","API REST","MySQL","Validações","Postman"],
+  links:[
+      {
+        label:"Código",
+        url:"https://github.com/Lu-nas/TeckGamer_api.git",
+        type:"github",
+       },
+     ],
+   },
+  
+  {
+  title: "Gerenciador de tarefas",
+  description:"Aplicação desenvolvida em Python. O sistema permite cadastrar, listar, atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
+  contribution:"Desenvolvi aplicação em Python, incluindo a implementação da API, cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, com testes realizados no Postman.",
+  tech:["python","Lógica de programação","Estruturas de Dados","CRUD"],
+  links:[
+    {
+      label:"Código", 
+      url:"https://github.com/Lu-nas/Gerenciador_de_tarefas.git",
+      type:"github",
+    },
+  ],
+},
 ];
 
 const Projects = () => {
