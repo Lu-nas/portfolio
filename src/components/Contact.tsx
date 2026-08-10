@@ -86,7 +86,7 @@ const Contact = () => {
         
         <div className="text-center">
           <Button size="lg" className="shadow-glow" asChild>
-            <a href="/cv.pdf" download>
+            <a href="/CV-Luana-S.pdf" download>
               <Download className="mr-2 h-5 w-5" />
               Baixar CV (PDF)
             </a>
