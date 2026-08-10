@@ -2,51 +2,88 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 
+type ProjectLink = {
+  label: string;
+  url: string;
+  type: "github" | "external";
+  };
+
 type Project = {
   title: string;
   description: string;
+  contribution: string;
   tech: string[];
-  github: string;
-  demo?: string;
+  links: ProjectLink[]
 };
 
 const projects: Project[] = [
   {
-    title: "Econectar - Backend",
-    description: "API REST desenvolvida para dar suporte ao sistema Econectar, com foco em boas práticas de backend. Implementa gerenciamento de usuários, serviços e categorias incluindo validações, tratamento de erros e integração com banco de dados relacional.",
-    tech: ["Java", "Spring Boot", "API REST", "JPA/Hibernate", "Validações"],
-    github: "https://github.com/Lu-nas/Econectar_PI_Gen.git",
-    
+    title: "Econectar",
+    description: 
+      "Plataforma de serviços urbanos sustentáveis desenvolvida como projeto integrador.",
+    contribution:
+    "No projeto integrador, desenvolvi a seção de Serviços da aplicação. Posteriormente utilizei o projeto como base para uma refatoração própria, reorganizando classes e estrutura do código.",
+    tech: ["Java", "Spring Boot",  "React", "TypeScript"],
+         links: [
+        {
+          label: "Backend",
+          url: "https://github.com/Lu-nas/Econectar_PI_Gen.git",
+          type: "github",
+        },
+        {
+          label: "Frontend",
+          url: "https://github.com/Lu-nas/Econectar.git",
+          type: "github",
+        },
+      ],   
   },
+  
   {
     title: "Jc dias Atelier",
     description: "Landing Page desenvolvida em parceria com @HenriquedSS1912 para uma loja de confecção e conserto de peças personalizadas. com foco em layout responsivo, SEO, documentação e organização do conteúdo.",
+    contribution: "Participei no desenvolvimento da seção de contato e na implementação do login destinado aos administradores do site.",
     tech: ["HTML","CSS","JavaScript", "Design Responsivo", "SEO"],
-    github:"https://github.com/HenriquedSS1912/lp-jcdias.git", 
-    demo: "https://jcdiasatelier.com.br/"
+             links: [
+        {
+          label: "Código",
+          url: "https://github.com/HenriquedSS1912/lp-jcdias.git",
+          type: "github",
+        },
+        {
+          label: "Demo Live",
+          url: "https://jcdiasatelier.com.br/",
+          type: "external",
+        },
+      ],
   },
+  
   {
   title: "TeckGamer - Backend",
-  description: "Projeto desenvolvido para simular o gerenciamento de produtos em um e-commerce gamer, com cadastro, validação e persistência de dados, aplicando boas práticas no desenvolvimento de APIs REST.",
+  description: "Projeto desenvolvido como parte de um aprendizado guiado de APIs REST, para simular o gerenciamento de produtos em um e-commerce gamer, com cadastro, validação e persistência de dados, aplicando boas práticas.",
+  contribution: "Desenvolvi as funcionalidades de cadastro e manutenção de games, categorias e produtos, utilizando operações CRUD e realizando testes das APIs com Postman. ",
   tech: ["Java", "Spring Boot", "API REST", "MySQL", "Validações", "Postman"],
-  github: "https://github.com/Lu-nas/TeckGamer_api.git",
-  
-},
-  {
-    title: "Econectar - Frontend",
-    description: "Interface web do sistema Econectar, desenvolvida para consumo de APIs REST, com foco em organização de componentes, UX e interação do usuário em uma plataforma de serviços urbanos sustentáveis. ",
-    tech: ["React", "TypeScript", "Tailwind CSS", "API REST", "UX"],
-    github: "https://github.com/Lu-nas/Econectar.git",
-    
+    links: [
+    {
+      label: "Código",
+      url: "https://github.com/Lu-nas/TeckGamer_api.git",
+      type: "github",
+     },
   },
+  
   {
     title: "Gerenciador de tarefas",
     description: "Aplicação desenvolvida em Python. O sistema permite cadastrar, listar, atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
+    contribution: "Desenvolvi aplicação em Python, incluindo a implementação da API, cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, com testes realizados no Postman.",
     tech: ["python","Lógica de programação", "Estruturas de Dados", "CRUD"],
-    github: "https://github.com/Lu-nas/Gerenciador_de_tarefas.git",
+   
+       links: [
+        {
+          label: "Código", 
+          url:"https://github.com/Lu-nas/Gerenciador_de_tarefas.git",
+          type: "github",
+        },
+      },
     
-  },
-
 ];
 
 const Projects = () => {
@@ -64,7 +101,7 @@ const Projects = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <Card  key={project.title} className="hover:shadow-glow transition-all overflow-hidden group">
               <CardContent> 
               <div className="p-6">
@@ -76,6 +113,16 @@ const Projects = () => {
                   {project.description}
                 </p> 
                 
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-foreground mb-2">
+                    Minha contribuição
+                  </h4>
+                
+                  <p className="text-muted-foreground">
+                    {project.contribution}
+                  </p>
+                </div>
+                
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
                     <span
@@ -86,29 +133,35 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+              
                 <div className="flex gap-4 flex-wrap">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer"
-                    aria-label={`Ver código do projeto ${project.title} no GitHub`}
+                  {project.links.map((link) => (
+                    <Button
+                      key={link.label}
+                      variant="outline"
+                      size="sm"
+                      asChild
                     >
-                      <Github className="mr-2 h-4 w-4" />
-                      Código
-                    </a>
-                  </Button>
-                  
-                  {project.demo && (
-                  <Button size="sm" asChild>
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer"
-                    aria-label={`Ver demo do projeto ${project.title}`}
-                    >
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Demo Live
-                    </a>
-                  </Button>
-                  )}
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${link.label} do projeto ${project.title}`}
+                      >
+                        {link.type === "github" ? (
+                        <Github className="mr-2 h-4 w-4" />
+                        ) : (
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        )}
+
+                        {link.label}
+                      </a>
+                    </Button>
+                  ))}
                 </div>
-              </div>
+                
+                </div>
+                
               </CardContent>
             </Card>
           ))}
