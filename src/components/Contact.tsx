@@ -1,5 +1,4 @@
-import { Mail, Linkedin, Github, Download, MessageSquare } from "lucide-react";
-import { Button } from "./ui/button";
+import { Mail, Linkedin, Github, MessageSquare } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -11,57 +10,54 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full mb-6" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Estou sempre aberta a novas oportunidades e conversas sobre tecnologia. <br></br>
-            Entre em contato através dos canais abaixo!
-          </p>
+            Estou construindo minha trajetória em tecnologia e buscando oportunidades  
+            para continuar aprendendo, contribuindo e transformando conhecimento em prática. 
+           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="flex flex-wrap justify-center items-center gap-4">
           <a
-            href="mailto:luana.silva@example.com"
-            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:scale-105 transition-all group"
+            href="mailto:luanasilva.ss9497@gmail.com"
+            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:-translate-y-1 transition-all group"
           >
             <div className="flex items-center gap-4">
               <div className="bg-accent/10 p-4 rounded-full group-hover:bg-accent/20 transition-colors">
                 <Mail className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-1">Email</h3>
                 <p className="text-sm text-muted-foreground">luanasilva.ss9497@gmail.com</p>
               </div>
             </div>
           </a>
           
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/luanasilva-lu-nas"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:scale-105 transition-all group"
+            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:-translate-y-1 transition-all group"
           >
             <div className="flex items-center gap-4">
               <div className="bg-accent/10 p-4 rounded-full group-hover:bg-accent/20 transition-colors">
                 <Linkedin className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-1">LinkedIn</h3>
-                <p className="text-sm text-muted-foreground">https://www.linkedin.com/in/luanasilva-lu-nas</p>
+                <p className="text-sm text-muted-foreground">linkedin.com/in/luanasilva-lu-nas</p>
               </div>
             </div>
           </a>
           
           <a
-            href="https://github.com"
+           href="https://github.com/Lu-nas"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:scale-105 transition-all group"
+            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:-translate-y-1 transition-all group"
           >
             <div className="flex items-center gap-4">
               <div className="bg-accent/10 p-4 rounded-full group-hover:bg-accent/20 transition-colors">
                 <Github className="h-6 w-6 text-accent" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-1">GitHub</h3>
-                <p className="text-sm text-muted-foreground">https://github.com/Lu-nas/Lu-nas</p>
+                <p className="text-sm text-muted-foreground">github.com/Lu-nas</p>
               </div>
             </div>
           </a>
@@ -70,27 +66,15 @@ const Contact = () => {
             href="https://wa.me/5519983350638"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:scale-105 transition-all group"
+            className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow hover:-translate-y-1 transition-all group"
           >
             <div className="flex items-center gap-4">
               <div className="bg-accent/10 p-4 rounded-full group-hover:bg-accent/20 transition-colors">
                 <MessageSquare className="h-6 w-6 text-accent" />
               </div>
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
                 <p className="text-sm text-muted-foreground">+55 (19) 98335-0638</p>
-              </div>
             </div>
           </a>
-        </div>
-        
-        <div className="text-center">
-          <Button size="lg" className="shadow-glow" asChild>
-            <a href="/CV-Luana-S.pdf" download>
-              <Download className="mr-2 h-5 w-5" />
-              Baixar CV (PDF)
-            </a>
-          </Button>
         </div>
       </div>
     </section>
