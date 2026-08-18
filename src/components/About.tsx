@@ -1,4 +1,4 @@
-import { Code2, Lightbulb, Rocket } from "lucide-react";
+import { Code2, SearchCode, Workflow } from "lucide-react";
 
 const About = () => {
   return (
@@ -14,56 +14,57 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-lg text-foreground/90">
             <p>
-              Olá! Sou estudante de <strong>Engenharia de Software</strong>, interessada em compreender como
-              os sistemas são projetados, implementados e evoluem ao longo do tempo. Possuo experiência acadêmica
-              no desenvolvimento de soluções utilizando <strong>Java</strong>, <strong>Python </strong> 
-              e tecnologias web, aplicando boas práticas de modelagem, organização e desenvolvimento de software.
-              
+              Sou estudante de <strong>Engenharia de Software</strong> e venho construindo
+              minha trajetória na tecnologia por meio de estudos e projetos práticos.
+              Tenho interesse em compreender não apenas como desenvolver uma aplicação,
+              mas também como suas diferentes partes se organizam e evoluem.
             </p>
             
             <p>
-              Atuando em projetos, com foco em <strong>backend</strong>, trabalhando na construção de <strong>APIs REST</strong>,
-              integração com <strong>bancos de dados relacionais</strong> e lógica de negócio. 
-              Também utilizo tecnologias do ecossistema JavaScript, como <strong> React</strong>, <strong>TypeScript</strong> e 
-              <strong> Node.js</strong>, para integração entre camadas e desenvolvimento de sistemas web completos.
+              Atualmente, direciono meus estudos para o <strong>desenvolvimento backend</strong>,
+              explorando a construção de APIs, regras de negócio, integração com bancos de
+              dados e comunicação entre diferentes camadas de uma aplicação.
             </p> 
 
             <p>
-              Possuo vivência em <strong>processos corporativos</strong> e <strong>documentação técnica</strong>,
-              além de interesse em <strong>Inteligência Artificial</strong> como ferramenta de apoio ao
-              desenvolvimento, visando otimizar o aprendizado, a produtividade e a qualidade do código.
+              Minha formação também se conecta a experiências com <strong>processos,
+              documentação e organização</strong>, que contribuem para uma visão mais
+              estruturada do desenvolvimento de software. Estou em uma fase de construção
+              profissional, buscando transformar o conhecimento adquirido em projetos
+              cada vez mais consistentes.
             </p>
           </div>
          
           <div className="grid gap-6">
              <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow ">
               <div className="flex items-center gap-3 mb-2.5">
-                <Rocket className="h-8 w-8 text-accent" />
-                <h3 className="text-xl font-semibold">Eficiência e Performance</h3>
+                <SearchCode className="h-8 w-8 text-accent" />
+                <h3 className="text-xl font-semibold">Exploração técnica</h3>
               </div>
               <p className="text-muted-foreground">
-                Busco compreender como decisões técnicas impactam o desempenho e manutenção, em
-                soluções eficientes e experiências de uso consistente.
+                Busco compreender o funcionamento das soluções e não apenas reproduzir implementações,
+                explorando diferentes possibilidades durante meus estudos e projetos.
               </p>
             </div>
              <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
                <div className="flex items-center gap-3 mb-2.5">
-                 <Lightbulb className="h-10 w-10 text-accent" />
-                 <h3 className="text-xl font-semibold">Aprendizado Contínuo</h3>
+                 <Workflow className="h-8 w-8 text-accent" />
+                 <h3 className="text-xl font-semibold">Aprendizado aplicado</h3>
                </div>
               <p className="text-muted-foreground">
-                Mantenho uma rotina constante de estudos e prática, fortalecendo fundamentos
-                e evoluindo de forma estruturada na Engenharia de Software. 
-              </p>
+                Procuro transformar o conteúdo estudado em prática, revisitando projetos 
+                e aplicando novos conhecimentos à medida que minha formação avança.
+
+                </p>
             </div>
             <div className="bg-card p-6 rounded-lg border border-border shadow-lg-custom hover:shadow-glow transition-shadow">
               <div className="flex items-center gap-3 mb-2.5">
-                 <Code2 className="h-10 w-10 text-accent" />
-                 <h3 className="text-xl font-semibold">Boas Práticas de Código</h3>
+                 <Code2 className="h-8 w-8 text-accent" />
+                 <h3 className="text-xl font-semibold">Código e organização</h3>
               </div>
               <p className="text-muted-foreground">
-                Valorizo código limpo, organizado e legível, aplicando boas práticas que facilitam
-                manutenção, testes e evolução das aplicações.
+                Valorizo estruturas claras, documentação e código organizado,
+                buscando facilitar a compreensão e a evolução das aplicações.
               </p>
             </div>
           </div>
