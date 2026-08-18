@@ -4,7 +4,7 @@ const Apresentacao = () => {
       <div className="max-w-4xl mx-auto text-center">
         
         <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-foreground">
-            Um pouco da minha história
+            UM POUCO DA MINHA HISTÓRIA
         </h2>
 
         <div className="max-w-3xl mx-auto text-lg text-muted-foreground text-left space-y-4">

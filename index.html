@@ -15,8 +15,20 @@
     <meta property="og:image" content="/og-image.png" />
 
      <!-- Substituir pela URL real após deploy -->
-    <meta property="og:url" content="https://seusite.netlify.app" />
+    <meta property="og:url" content="https://luana-silva-portfolio.netlify.app" />
+
+    <script>
+      const theme = localStorage.getItem("theme");
+
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      }else {
+      document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
+
+
 
   <body>
     <div id="root"></div>
