@@ -12,6 +12,7 @@ type Project = {
   title: string;
   description: string;
   contribution: string;
+  details?: string;
   tech: string[];
   links: ProjectLink[];
 };
@@ -22,7 +23,8 @@ const projects: Project[] = [
     description: 
       "Plataforma de serviços urbanos sustentáveis desenvolvida como projeto integrador.",
     contribution:
-    "No projeto integrador, desenvolvi a seção de Serviços da aplicação. Posteriormente utilizei o projeto como base para uma refatoração própria, reorganizando classes e estrutura do código.",
+    "Desenvolvi a seção de Serviços da aplicação e, posteriormente refatorei parte da estrutura do projeto.",
+    details:"Utilizei o projeto como base para uma refatoração própria, reorganizando classes e estrutura do código.",
     tech:["Java", "Spring Boot",  "React", "TypeScript"],
     links:[
       {
@@ -40,9 +42,10 @@ const projects: Project[] = [
   
   {
    title:"Jc dias Atelier",
-   description:"Landing Page desenvolvida em parceria com @HenriquedSS1912 para uma loja de confecção e conserto de peças personalizadas. com foco em layout responsivo, SEO, documentação e organização do conteúdo.",
-   contribution:"Desenvolvimento da seção de contato e implementação do login destinado aos administradores do site.",
-   tech: ["HTML","CSS","JavaScript","Design Responsivo","SEO"],
+   description:"Landing Page desenvolvida em parceria para uma loja de confecção e conserto de peças personalizadas.",
+   contribution:"Atuei no desenvolvimento da seção de contato e do login destinado aos administradores do site.",
+   details:"A página foi desenvolvida com layout responsivo, SEO, documentação e organização do conteúdo.",
+   tech: ["HTML","CSS","SEO","JavaScript","Design Responsivo",],
    links: [
       {
         label: "Código",
@@ -59,9 +62,10 @@ const projects: Project[] = [
   
   {
   title:"TeckGamer - Backend",
-  description:"Projeto desenvolvido como parte de um aprendizado guiado de APIs REST, simulando o gerenciamento de produtos em um e-commerce gamer com cadastro, validação e persistência de dados, aplicando boas práticas.",
-  contribution:"Desenvolvi as funcionalidades de cadastro, manutenção dos games em categorias e produtos, útilizando operações CRUD e realizando testes das APIs com Postman.",
-  tech:["Java","Spring Boot","API REST","MySQL","Validações","Postman"],
+  description:"Projeto com aprendizado guiado de APIs REST, simulando o gerenciamento de produtos em um e-commerce gamer.",
+  contribution:"Atuei em funcionalidades de cadastro, categorias e produtos, utilizando operações CRUD e testes da API com Postman.",
+  details:" O projeto foi desenvolvido como um exercicio guiado de construção de uma API REST para gerenciamento de games, categorias e produtos.",
+  tech:["Java","Spring Boot","API REST","MySQL","Postman"],
   links:[
       {
         label:"Código",
@@ -73,9 +77,10 @@ const projects: Project[] = [
   
   {
   title: "Gerenciador de tarefas",
-  description:"Aplicação desenvolvida em Python. permitindo cadastro, em lista, para atualizar e remover tarefas, aplicando conceitos como controle de fluxo, estruturas de dados e organização modular do código.", 
-  contribution:"Implementação da API com cadastro e gerenciamento de tarefas, funcionalidade para marcá-las como concluídas e manipulação de arquivos JSON, finalizando positivo os testes realizados no Postman.",
-  tech:["python","Lógica de programação","Estruturas de Dados","CRUD"],
+  description:"Aplicação desenvolvida em Python para cadastro e gerenciamento de tarefas, explorando estrutura de dados, fluxo de controle e organização modular do código.", 
+  contribution:"Implementei da API para cadastro e gerenciamento de tarefas.",
+  details:"Inclui marcação de tarefas como concluídas, manipulação de arquivos JSON, e testes da API com Postman.",
+  tech:["python","CRUD","Lógica de programação","Estruturas de Dados",],
   links:[
     {
       label:"Código", 
@@ -100,34 +105,42 @@ const Projects = () => {
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full" />
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Card  key={project.title} className="hover:shadow-glow transition-all overflow-hidden group">
               <CardContent> 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-accent transition-colors">
+              <div className="p-5">
+                <h3 className="text-2xl font-bold mb-2 text-foreground group-hover:text-accent transition-colors">
                   {project.title}
                 </h3>
-                
-                <p className="text-muted-foreground mb-4">
+
+              <div className="mb-4">
+                <p className="text-muted-foreground mb-3">
                   {project.description}
                 </p> 
-                
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-foreground mb-2">
-                    Minha contribuição
-                  </h4>
-                
-                  <p className="text-muted-foreground">
-                    {project.contribution}
-                  </p>
+
+                <p className="text-muted-foreground mb-3">
+                  {project.contribution}
+                </p>
+
+                  {project.details && (
+                    <details className="text-sm mb-4">
+                      <summary className="cursor-pointer text-primary hover:underline">
+                        Mais detalhes
+                      </summary>
+
+                      <p className="mt-2 text-muted-foreground">
+                        {project.details}
+                      </p>
+                    </details>
+                  )}
                 </div>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm bg-accent/10 text-accent rounded-full border border-accent/20"
+                      className="px-2.5 py-0.5 text-xs bg-accent/10 text-accent rounded-full border border-accent/20"
                     >
                       {tech}
                     </span>
@@ -137,9 +150,14 @@ const Projects = () => {
                 <div className="flex gap-4 flex-wrap">
                   {project.links.map((link) => (
                     <Button
-                      key={link.label}
-                      variant="outline"
+                     key={link.label}
+                      variant={link.type === "github" ? "outline" : "default"}
                       size="sm"
+                      className={
+                        link.type === "github"
+                        ? "border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                        : ""
+                      }
                       asChild
                     >
                       <a
