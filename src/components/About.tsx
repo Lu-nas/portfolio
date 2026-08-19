@@ -2,10 +2,11 @@ import { Code2, SearchCode, Workflow } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+    <section id="about" aria-labelledby="about-title" 
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+          <h2 id="about-title" className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
             Sobre Mim
           </h2>
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full" />

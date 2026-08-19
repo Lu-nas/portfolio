@@ -13,7 +13,7 @@ const experiences = [
     title: "Bacharelado em Engenharia de Software",
     organization: "Cruzeiro do Sul – Virtual ",
     period: "2024 - 2028 (em andamento)",
-    description: "Graduação em Engenharia de software, com foco em em fundamentos de desenvolvimento, arquitetura de sistemas, modelagem de dados e boas práticas de engenharia." 
+    description: "Engenharia de Software, com foco em fundamentos de desenvolvimento, arquitetura de sistemas, modelagem de dados e boas práticas de engenharia." 
     
   },
    {
@@ -34,11 +34,11 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="experience"  aria-labelledby="experience-title" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            Experiência Profissional & Formação
+          <h2 id="experience-title" className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+            Experiência & Formação
           </h2>
           <div className="w-20 h-1 bg-gradient-accent mx-auto rounded-full" />
         </div>

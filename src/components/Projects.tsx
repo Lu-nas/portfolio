@@ -62,9 +62,9 @@ const projects: Project[] = [
   
   {
   title:"TeckGamer - Backend",
-  description:"Projeto com aprendizado guiado de APIs REST, simulando o gerenciamento de produtos em um e-commerce gamer.",
+  description:"Projeto desenvolvido como exercício guiado de APIs REST, simulando o gerenciamento de produtos em um e-commerce gamer.",
   contribution:"Atuei em funcionalidades de cadastro, categorias e produtos, utilizando operações CRUD e testes da API com Postman.",
-  details:" O projeto foi desenvolvido como um exercicio guiado de construção de uma API REST para gerenciamento de games, categorias e produtos.",
+  details:" Implementa funcionalidades para gerenciamento de games, categorias e produtos.",
   tech:["Java","Spring Boot","API REST","MySQL","Postman"],
   links:[
       {
@@ -77,10 +77,10 @@ const projects: Project[] = [
   
   {
   title: "Gerenciador de tarefas",
-  description:"Aplicação desenvolvida em Python para cadastro e gerenciamento de tarefas, explorando estrutura de dados, fluxo de controle e organização modular do código.", 
-  contribution:"Implementei da API para cadastro e gerenciamento de tarefas.",
-  details:"Inclui marcação de tarefas como concluídas, manipulação de arquivos JSON, e testes da API com Postman.",
-  tech:["python","CRUD","Lógica de programação","Estruturas de Dados",],
+  description:"Aplicação desenvolvida em Python para gerenciamento de tarefas, explorando estrutura de dados, fluxo de controle e organização modular.", 
+  contribution:"Implementei a API responsável pelas operações de cadastro, atualização e gerenciamento de tarefas.",
+  details:"Inclui marcação de tarefas como concluídas, persistência em arquivos JSON, e testes da API com Postman.",
+  tech:["Python","CRUD","Lógica de programação","Estruturas de Dados",],
   links:[
     {
       label:"Código", 
